@@ -4,7 +4,7 @@ maya.PluginManager.add('blockgrid', function(editor, url) {
         text: '1/2 div',
         icon: false,
         onclick: function() {
-            editor.insertContent('<div class="col-xs-12 col-md-6"></div>');
+            editor.insertContent('<div class="col-xs-12 col-md-6">'+editor.selection.getContent()+'</div>');
         }
     });
 
@@ -12,7 +12,7 @@ maya.PluginManager.add('blockgrid', function(editor, url) {
         text: '1/1 div',
         icon: false,
         onclick: function() {
-            editor.insertContent('<div class="col-xs-12"></div>');
+            editor.insertContent('<div class="col-xs-12">'+editor.selection.getContent()+'</div>');
         }
     });
 
@@ -21,15 +21,15 @@ maya.PluginManager.add('blockgrid', function(editor, url) {
         text: '1/2 div',
         context: 'tools',
         onclick: function() {
-            editor.insertContent('<div class="col-xs-12 col-md-6"></div>');
+            editor.insertContent('<div class="col-xs-12 col-md-6">'+editor.selection.getContent()+'</div>');
         }
     });
 
-    editor.addButton('soloDiv', {
+    editor.addMenuItem('soloDiv', {
         text: '1/1 div',
-        icon: false,
+        context: 'tools',
         onclick: function() {
-            editor.insertContent('<div class="col-xs-12"></div>');
+            editor.insertContent('<div class="col-xs-12">'+editor.selection.getContent()+'</div>');
         }
     });
 });

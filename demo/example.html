@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form>
+    <div class="case-article col-xs-12 col-md-9">
+        <textarea path="content" cols="" rows="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aut consectetur culpa esse exercitationem inventore, laudantium maxime minus molestiae molestias necessitatibus nihil quia sunt totam. Deserunt dicta fugit quo?</textarea>
+    </div>
+</form>
+
+<form id="temp_img_form" method="POST" style="display: none" enctype="multipart/form-data">
+    <input name="incoming" type="file"/>
+</form>
+
+<script src="../maya.min.js"></script>
+<script>
+    maya.init({
+        selector:'textarea',
+        language : 'ru',
+        plugins : 'blockgrid preview link anchor',
+        toolbar: "bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | formatselect fontselect fontsizeselect | link anchor | halfDiv | soloDiv | image",
+        formats: {
+            "half_div": {
+                block: 'div',
+                classes: "lead",
+                attributes: {
+                    title: 'Полудив'
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
