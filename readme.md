@@ -1,0 +1,1 @@
+This is a fork of [TinyMCE](https://github.com/maya/maya) project
