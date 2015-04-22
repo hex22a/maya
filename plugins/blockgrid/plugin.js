@@ -8,7 +8,7 @@ maya.PluginManager.add('blockgrid', function(editor, url) {
         }
     });
 
-    editor.addButton('solDiv', {
+    editor.addButton('soloDiv', {
         text: '1/1 div',
         icon: false,
         onclick: function() {
@@ -25,7 +25,7 @@ maya.PluginManager.add('blockgrid', function(editor, url) {
         }
     });
 
-    editor.addButton('solDiv', {
+    editor.addButton('soloDiv', {
         text: '1/1 div',
         icon: false,
         onclick: function() {
